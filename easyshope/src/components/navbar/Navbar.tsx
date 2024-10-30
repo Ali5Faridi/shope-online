@@ -10,10 +10,10 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <ul className="flex">
             <li className="ml-4">
-              <Link to={"/"}>Home</Link>
+              <Link to={"/"} className=" hover:bg-purple-400 p-4 rounded">Home</Link>
             </li>
             <li className="ml-4">
-              <Link to={"/Store"}>Store</Link>
+              <Link to={"/Store"} className=" hover:bg-purple-400 p-4 rounded">Store</Link>
             </li>
           </ul>
           <div>
