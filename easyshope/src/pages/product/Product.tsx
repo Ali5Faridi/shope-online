@@ -2,13 +2,15 @@ import React from "react";
 
 import { useParams } from "react-router-dom";
 import Container from "../../components/container/Container";
+import Button from "../../components/button/Button";
+
 
 function Product() {
   const params = useParams();
   return (
     <div>
      <Container>
-       <div className="h-96 shadow mt-4 grid grid-cols-12">
+       <div className="h-90 shadow mt-4 grid grid-cols-12">
         <div className="bg-orange-300 col-span-10 p-3">
             <h1>product name</h1>
             <div>
@@ -20,8 +22,15 @@ function Product() {
         <div className="bg-slate-300 col-span-2 p-4">
             <img
             className="rounded-t"
-            src="https://via.placeholder.com/150"
+            src="https://picsum.photos/200/250"
             />
+            <div>
+                <Button variant="primary"> add to cart </Button>
+                <Button variant="danger"> add to cart </Button>
+                <Button variant="secondary"> add to cart </Button>
+                <Button variant="success"> add to cart </Button>
+                <Button variant="warning"> add to cart </Button>
+            </div>
 
         </div>
        </div>
