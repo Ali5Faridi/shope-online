@@ -3,20 +3,19 @@ import { ComponentProps } from "react"
 type variant = 'primary' | 'secondary' | 'danger' | 'warning' | 'success';
 
 type Button = ComponentProps<'button'> & {
-    variant: variant;
+    variant?: variant;
 }
 
-function Button({children, variant, ...rest}: Button) {
-    console.log(checkVariant(variant));
+function Button({children, variant,style, ...rest}: Button) {
 
   return (
-    <button {...rest} style={{...checkVariant(variant)}}> {children} </button>
+    <button {...rest} style={{borderRadius:'4px', padding:'4px 8px',...style,...checkVariant(variant)}}> {children} </button>
   )
 }
 
 export default Button
 
-function checkVariant(variant: variant){
+function checkVariant(variant?: variant){
     if(variant === 'primary'){
         return {backgroundColor: 'blue', color: 'white'}
     } else if(variant === 'secondary'){

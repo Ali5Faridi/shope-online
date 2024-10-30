@@ -25,11 +25,7 @@ function Product() {
             src="https://picsum.photos/200/250"
             />
             <div>
-                <Button variant="primary"> add to cart </Button>
-                <Button variant="danger"> add to cart </Button>
-                <Button variant="secondary"> add to cart </Button>
-                <Button variant="success"> add to cart </Button>
-                <Button variant="warning"> add to cart </Button>
+                <Button className="mt-2 w-full" variant="primary"> Add To Cart </Button>
             </div>
 
         </div>

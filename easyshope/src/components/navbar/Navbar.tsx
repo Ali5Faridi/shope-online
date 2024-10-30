@@ -17,7 +17,9 @@ function Navbar() {
             </li>
           </ul>
           <div>
+            <Link to="/cart">
             <FaShoppingCart size={24} /> 
+            </Link>
           </div>
         </div>
       </Container>
